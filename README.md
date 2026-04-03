@@ -24,4 +24,11 @@ kubectl get po
 kubectl get ing
 
 
+kubectl create -f probes.yml
+kubectl get po
+kubectl exec -it liveness -- bash
+ls tmp/
+
+rm -rf tmp/flm
+ctrl+c --> exit
 
